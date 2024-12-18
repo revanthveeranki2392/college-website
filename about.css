@@ -1,0 +1,187 @@
+/* Resetting some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and general text styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f6;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header styling */
+header{
+    background-color:blue;
+    color: #fff;
+    padding: 1.5em 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 1em 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    transition: background-color 0.3s;
+}
+
+header nav ul li a:hover {
+    background-color: #fff;
+    color:blue;
+    border-radius: 5px;
+}
+
+.logo {
+    width: 140px;
+    height: auto;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* Navigation styling */
+
+
+/* Main content styling */
+main {
+    padding: 40px 30px;
+}
+
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+section h2 {
+    font-size: 2rem;
+    color:lightcoral;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+section ul {
+    list-style-type: none;
+    font-size: 1.1rem;
+}
+
+section ul li {
+    margin: 10px 0;
+}
+
+section ul li strong {
+    color:lightcoral;
+}
+
+/* About image styling */
+.about-image-section {
+    text-align: center;
+}
+
+.campus-image {
+    width: 600px;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Alumni section styling */
+.alumni-section {
+    background-color: #e7f7ff;
+}
+
+.alumni-stories {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.alumni {
+    width: 45%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.alumni h3 {
+    color:lightcoral;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+/* Contact section styling */
+.contact-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.contact-section a {
+    color:lightcoral;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Footer styling */
+footer {
+    background-color: lightcoral;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-logo {
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    .alumni-stories {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .alumni {
+        width: 80%;
+        margin: 10px 0;
+    }
+}

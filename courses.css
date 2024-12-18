@@ -1,0 +1,154 @@
+/* Resetting some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and general text styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header styling */
+header {
+    background-color: #004d99;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+}
+
+h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-right: 200px;
+}
+
+/* Navigation styling */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #fff;
+    color: #004d99;
+    border-radius: 5px;
+    padding: 5px;
+    
+}
+
+/* Main content styling */
+main {
+    padding: 40px 30px;
+}
+
+section h2 {
+    font-size: 2rem;
+    color: #003366;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Course section */
+.course-section {
+    margin-bottom: 40px;
+}
+
+.course-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.course-card {
+    background-color: #fff;
+    padding: 20px;
+    width: 280px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.course-card:hover {
+    transform: scale(1.05);
+}
+
+.course-card h3 {
+    font-size: 1.6rem;
+    color: #003366;
+    margin-bottom: 15px;
+}
+
+.course-card p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #555;
+}
+
+/* Footer styling */
+footer {
+    background-color: #003366;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-logo {
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .course-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .course-card {
+        width: 90%;
+        margin-bottom: 20px;
+        
+    }
+}
+img{
+    width: 250px;
+
+}
